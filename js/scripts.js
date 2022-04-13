@@ -118,8 +118,6 @@ async function cargarProductoCarrito() {
           const cantidad = countDuplicatesId(id, idproductosSplit);
           const precioTotal = producto.precio * cantidad;
 
-
-
           html += `
   
             <div class="cart-producto">
@@ -140,8 +138,7 @@ async function cargarProductoCarrito() {
                     </p>
                 </div>
            </div>
-         
-        `;
+                 `;
         }
       });
     });
@@ -236,6 +233,7 @@ function deleteAllIds(id, arrayIds) {
     return itemId != id;
   });
 }
+
 
 
 
